@@ -6,17 +6,18 @@ Palette swap only. Layout, card types, typography treatment, and copy structure 
 
 ## 1. Color Tokens
 
-| Token | Hex | Role | Replaces (original) |
-|---|---|---|---|
-| `--emerald-900` Deep Emerald | `#0F3D34` | Primary dark surface (majority of cards, hero bg) | Black |
-| `--emerald-700` Emerald | `#134E43` | Secondary dark surface — layering, alt dark cards | Black (variant) |
-| `--mint-100` Mint Mist | `#E6F0E9` | Light neutral — tags, quiet fills | Light grey |
-| `--cream-50` Cream | `#F7F6F1` | Base light surface, reversed text on dark | White |
-| `--gold-500` Gold | `#C8A96A` | Accent — CTAs, badges, highlight cards | Neon yellow-green |
+| Token                        | Hex       | Role                                              | Replaces (original) |
+| ---------------------------- | --------- | ------------------------------------------------- | ------------------- |
+| `--emerald-900` Deep Emerald | `#0F3D34` | Primary dark surface (majority of cards, hero bg) | Black               |
+| `--emerald-700` Emerald      | `#134E43` | Secondary dark surface — layering, alt dark cards | Black (variant)     |
+| `--mint-100` Mint Mist       | `#E6F0E9` | Light neutral — tags, quiet fills                 | Light grey          |
+| `--cream-50` Cream           | `#F7F6F1` | Base light surface, reversed text on dark         | White               |
+| `--gold-500` Gold            | `#C8A96A` | Accent — CTAs, badges, highlight cards            | Neon yellow-green   |
 
 **Ratio in the grid:** roughly matches the source — 5 dark (emerald) cards, 4 accent (gold) cards, 2 light (cream) cards, out of 12. Keep this ratio if you extend the grid; the dark surface should always be the majority so the gold accent still reads as a highlight, not a base color.
 
 **Contrast notes:**
+
 - Cream text (`#F7F6F1`) on Deep Emerald (`#0F3D34`) — passes AA for body and large text.
 - Emerald text on Gold (`#C8A96A`) — passes AA for large/bold text only; keep body copy on gold cards short and bold, not long paragraphs.
 - Avoid gold text on cream — too low contrast for anything but decorative marks.
@@ -25,11 +26,11 @@ Palette swap only. Layout, card types, typography treatment, and copy structure 
 
 ## 2. Typography
 
-| Role | Family | Usage |
-|---|---|---|
-| Display | `Archivo Black` | Card headlines, hero title — always uppercase, tight leading (0.96–1.02) |
-| Accent | `Fraunces` (serif, weight 500) | One-off elegant statement lines — used sparingly, echoes the "wellness/elegant" tone of the Emerald & Cream reference |
-| Body | `Inter` (400–800) | Captions, tags, buttons, paragraph copy |
+| Role    | Family                         | Usage                                                                                                                 |
+| ------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| Display | `Archivo Black`                | Card headlines, hero title — always uppercase, tight leading (0.96–1.02)                                              |
+| Accent  | `Fraunces` (serif, weight 500) | One-off elegant statement lines — used sparingly, echoes the "wellness/elegant" tone of the Emerald & Cream reference |
+| Body    | `Lato` (400–800)               | Captions, tags, buttons, paragraph copy                                                                               |
 
 **Scale:** 12 (caption/tag) → 16 (body) → 22 (card h3) → 34 (counter numerals) → 46+ (hero display, fluid up to 84px).
 
